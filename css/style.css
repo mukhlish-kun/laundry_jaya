@@ -1,0 +1,311 @@
+body {
+  padding: 0em;
+  margin: 0em;
+  font-family: Tahoma;
+  
+}
+header label{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 0px rgb(94, 94, 94);
+}
+
+header, nav, section, footer {
+  background: rgb(92, 166, 252);
+  color: white;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+a, td a {
+  font-weight: bold;
+  color: rgb(0, 130, 139);
+}
+
+a:visited {
+  color: rgb(0, 130, 139);
+}
+
+a:hover {
+  color: darkblue;
+}
+
+header, nav, footer {
+  width: 100%;
+}
+
+header {
+  height: 50px;
+}
+
+footer {
+  height: 50px;
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+  margin: 0em;
+  background: rgb(255, 255, 255);
+  
+}
+
+nav {
+  height: 55px;
+  color: white;
+  font-size: 1em;
+  border-bottom: 1px groove rgb(2, 52, 189) ;
+}
+
+nav a, nav a:visited {
+  color: white;
+}
+
+section#content {
+  height: calc(98vh - 157px);
+  width: 100%;
+  background-image: url('../img/bg2.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  color: rgb(73, 143, 223);
+  overflow: auto;
+}
+
+/*navigasi*/
+.nav-nama {
+  float: right;
+  align-items: center;
+  display: flex;
+  margin-top: 1em;
+  margin-right: 1em;
+  padding: 0.5em;
+  font-size: 12px;
+  font-weight: bold;
+  border-bottom: 3px groove rgb(60, 87, 124);
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav>ul>li {
+  float: left;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  color: #3c3c3c;
+}
+
+li.dropdown {
+  display: inline-block;
+  color: #3c3c3c !important;
+}
+
+.dropdown:hover .isi-dropdown {
+  display: block;
+}
+
+.isi-dropdown {
+  position: relative;
+  display: none;
+  background-color: #ffffffd3;
+  font-size: 0.7em;
+}
+
+.isi-dropdown a {
+  color: #3c3c3c !important;
+}
+
+.isi-dropdown a:hover {
+  color: rgb(92, 166, 252) !important;
+  background-color: #f9f9f900;
+}
+
+header input[type=radio] {
+  display: none;
+  margin: 0;
+}
+
+header label {
+  align-items: center;
+  display: flex;
+  font-size: 1em;
+  padding: 0.2em;
+}
+
+footer p {
+  padding: 1em;
+  margin: 0em;
+  text-align: center;
+  align-items: center;
+}
+
+/*element footer*/
+.footer p {
+  
+  padding: 0em;
+  margin: 0em;
+  text-transform: none;
+  font-size: 0.5em;
+  color: black;
+}
+
+.footer {
+  
+  padding: 0em;
+  margin: 0em;
+  margin-top: 7px;
+}
+
+fieldset {
+  font-size: 12px;
+  margin: 1em;
+  padding: 15px 20px 20px 20px;
+  background: rgba(255, 255, 255, 0.295);
+  min-height: 90%;
+}
+
+table {
+  color: #666;
+  text-shadow: 1px 1px 0px #fff;
+  background: #eaebec;
+  border-color: #ccc;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 15px 15px;
+  border-left: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  background: #ededed;
+}
+
+table td:first-child {
+  text-align: left;
+  padding-left: 15px;
+  border-left: 0px;
+}
+
+table td {
+  padding: 20px 25px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  border-left: 1px solid #e0e0e0;
+  background: #fafafa;
+  background: --webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+  background: --moz-linear-gradient(top, #fbfbfb, #fafafa);
+}
+
+table td:last-child td {
+  border-bottom: 0;
+}
+
+table tr:last-child td:first-child {
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+table tr:last-child td:last-child {
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+table tr:hover td {
+  background: #f2f2f2;
+  background: --webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+  background: --moz-linear-gradient(top, #f2f2f2, #f0f0f0);
+}
+
+/*di halaman edit profil*/
+#tbl_edit_profil, .search, .add_paket {
+  font-size: 12px;
+}
+
+#note_profil {
+  text-transform: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: rgba(231, 73, 73, 0.815);
+}
+
+#tbl_edit_profil input, #tbl_edit_profil textarea, .add_paket input, .search input {
+  border: none;
+  padding: 0.5em;
+  border-radius: 3px;
+}
+
+#tbl_edit_profil button, .add_paket button, .add_btn {
+  background: rgb(43, 188, 255);
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.2em 2em;
+  color: black;
+  margin-top: 1em;
+}
+
+#tbl_edit_profil button:hover, .add_paket button:hover, .add_btn:hover {
+  color: white;
+  background: rgb(29, 133, 182);
+}
+
+.search, #tbl_edit_profil, #tbl_edit_profil td, .search td, .search td:hover, .search tr:hover td {
+  border: none;
+  background: none;
+  font-weight: bold;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 16px;
+  text-shadow: 1px 1px 0px rgb(94, 94, 94);
+}
+
+.operator td {
+  text-transform: none;
+}
+
+select{
+  padding: 0.4em;
+  border: 1px solid white;
+  border-radius: 3px;
+  width: 150px;
+  text-transform: uppercase;
+  background: rgb(234, 254, 255);
+}
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+.selamat_datang{
+  margin: auto;
+  width:800px;
+  margin-top: 10vh;
+  font-size: 5em;
+  font-family: 'Seymour One', sans-serif;
+  font-weight: bold;
+  text-align: center;
+    background: linear-gradient(to right,  #6efff8 20%, #63b8fd 40%, #42f8bb 60%, #6effec 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate 3s linear infinite;
+    text-shadow: 2px 2px rgba(43, 34, 34, 0.39);
+}
+@keyframes animate {
+  to {
+    background-position: 200% center;
+  }
+}
+
